@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<style>
+	.container {
+		padding: 50px;
+	}
+	</style>
+  
+  </head>
+  <body>
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/indexportal.html">Haemopor</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/rigtigfejlfind.html">Fejlfinding </a>
+      <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/dagbog.html">Dagbog</a>
+      <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/support.html">Support</a>
+    </div>
+  </div>
+</nav>
+	
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Kørende analyse
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+		
+		<div class="form-group">
+                <p> Indtast dine data </p>
+                <label for="usr">Dato</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Vægt - før og efter</label>
+                <input type="text" class="form-control" id="pwd">
+                <input type="text" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="usr">Blodtryk - før og efter</label>
+                <input type="text" class="form-control" id="usr">
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Blodflow</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">V-tryk</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">A-tryk</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Væske Træk</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">HD-tid</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Blod-volume</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Fragmin</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Filter</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Medicin</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+
+
+            <div class="container">
+                <input type="submit" class="btn btn-info"  value="Submit"  onclick="showDiv()">
+            </div>
+			
+			<p></p>
+
+            <div class="alert alert-success" id="welcomeDiv" style="display:none;" role="alert">
+                <a href="#" class="alert-link">Succes</a>
+            </div>
+		
+		
+	  </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Ældre dagbøger
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="card-block">
+      
+	  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Dato</th>
+        <th>Vægt: Før/Efter</th>
+        <th>Blodtryk: Før/Efter</th>
+		<th>Blodflow</th>
+		<th>V-tryk</th>
+		<th>A-tryk</th>
+		<th>Væske Træk</th>
+		<th>HD-tid</th>
+		<th>Blod-volume</th>
+		<th>Fregmin</th>
+		<th>Filter</th>
+		<th>Medicin</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>13/4</td>
+		<td>63,2</td>
+		<td>161/67 & 147/67</td>
+		<td>300</td>
+		<td></td>
+		<td></td>
+		<td>2.7</td>
+		<td>4</td>
+		<td>68,8</td>
+		<td>3500</td>
+		<td></td>
+		<td></td>
+      </tr>
+	  <tr>
+        <td>7/4</td>
+		<td>62</td>
+		<td>133/69</td>
+		<td>300</td>
+		<td>165</td>
+		<td>-95</td>
+		<td>0.5</td>
+		<td>4</td>
+		<td></td>
+		<td>1500</td>
+		<td>1000</td>
+		<td></td>
+      </tr>
+    </tbody>
+  </table>
+	  
+	  </div>
+    </div>
+  </div>
+  
+</div>
+  
+  
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
