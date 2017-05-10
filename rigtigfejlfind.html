@@ -12,10 +12,23 @@
 	.container {
 		padding: 50px;
 	}
+	
 	</style>
+  
   
   </head>
   <body>
+  
+  <script>
+  $(document).ready(function(){
+    $('#btn').click(function() {
+        var toAdd = $('input[name=checkListItem]').val();
+        $('.list').append('<div class="item">' + toAdd + '</div>');
+    });
+});
+  
+  </script>
+  
 		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -23,17 +36,18 @@
   <a class="navbar-brand" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/indexportal.html">Haemopor</a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/rigtigfejlfind.html">Fejlfinding </a>
+      <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/rigtigfejlfind.html">Setup</a>
       <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/dagbog.html">Dagbog</a>
       <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/support.html">Support</a>
+	  <a class="nav-item nav-link" href="file:///C:/Users/Henrik%20Fog%20Bunzel/Desktop/funkprotoone/maskineprogram.html">Maskinens skærm</a>
     </div>
   </div>
 </nav>
 	
 	<div class="container" >
     <div class="row">
-        <div class="col-sm-4">
-            <h1>Sæt maskinen rigtig op</h1>
+        <div class="col">
+            <h1>Opstart af Fresenius 5008</h1>
             <br></br>
             <img src="5.jpg" alt="" usemap="#clickmap" style="width:350px;height:300px;">
 
@@ -44,10 +58,16 @@
             </map>
         </div>
 
-        <div class="col-sm-4">
-        </div>
-
-        <div class="col-sm-4">
+        <div class="col">
+			<h1>Tilføj noter</h1>
+			<form>
+				<div class="form-group">
+				  <label for="comment">Hvor er du kommet til</label>
+				  <textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+			 </form>
+			<button id="button" type="button" class="btn btn-primary btn-md">Small</button>
+			<div class="list"></div>
         </div>
     </div>
 </div>
